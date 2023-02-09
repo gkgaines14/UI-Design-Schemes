@@ -1,3 +1,14 @@
+:root{
+    --color-one:#6a031f;
+    --color-two:#bd0760;
+    --color-three:#edb7fc;
+    --color-four:#cb6ce6;
+    --color-five:#9f0498;
+    --color-six:#5c219f;
+
+}
+
+
 body{
     background-color:rgb(241, 242, 251);
 }
@@ -26,21 +37,26 @@ main{
 /* 
     #ce1b7d
     #8e0332
-
+    #9f0498 - logo purple
+    #5c219f - report purple
 */
 
+img{
+    width: 500px;
+}
 
 #theme-one{
     margin-top: 140px;
     background: linear-gradient(
         to right,
-        #e36faf 16.66%,
-        #8e0332 16.66% 33.32%,
-        #edb7fc 33.32% 49.98%,
-        #cb6ce6 49.98% 66.64%,
-        #9d1982 66.64% 83.3%,
-        #5c219f 83.3%
+        var(--color-one) 16.66%,
+        var(--color-two) 16.66% 33.32%,
+        var(--color-three) 33.32% 49.98%,
+        var(--color-four) 49.98% 66.64%,
+        var(--color-five) 66.64% 83.3%,
+        var(--color-six) 83.3%
     );
+
     width: 700px;
     height: 300px;
     box-shadow: 0px 5px 8px -2px rgb(92, 90, 90);
